@@ -164,7 +164,7 @@ public class PerguntaDAO implements PadraoDAO<Pergunta>
 	 * @throws Exception
 	 */
 	public int deletar(int id) throws Exception {
-		this.statement = this.conection.prepareStatement("DELETE FROM ? WHERE ID = ?");
+		this.statement = this.conection.prepareStatement("DELETE FROM PERGUNTAS WHERE ID = ?");
 
 		this.statement.setInt(1, id);
 
