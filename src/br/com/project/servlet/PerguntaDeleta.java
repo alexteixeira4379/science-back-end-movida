@@ -1,4 +1,4 @@
-package br.com.project.servelet;
+package br.com.project.servlet;
 import java.io.IOException;
 
 import br.com.project.beans.Pergunta;
@@ -34,9 +34,8 @@ public class PerguntaDeleta extends HttpServlet {
 	 p.setId(idPergunta);
  
 	 try {
-		// Instância o DAO
 		 PerguntaDAO pDao = new PerguntaDAO(); 
-		 if(pDao.deletar(idPergunta) == 1) { // Deletar nao deveria retornar Boolean?
+		 if(pDao.deletar(idPergunta) == 1) { 
 			 request.setAttribute("message", "Deletado com sucesso, se precisar deletar"
 			 + " mais uma pergunta, preencha os dados abaixo: <br>"
 			 + "<a href=index.jsp>Clique para voltar para a index</a>");

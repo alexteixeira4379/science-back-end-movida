@@ -1,4 +1,4 @@
-package br.com.project.servelet;
+package br.com.project.servlet;
 import java.io.IOException;
 
 import br.com.project.beans.Pergunta;
